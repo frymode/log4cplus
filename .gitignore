@@ -9,6 +9,8 @@ autom4te.cache/
 objdir*/
 Win32/
 x64/
+obj/
+stage/
 
 #
 # From Github's C++.gitignore:
