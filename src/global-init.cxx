@@ -4,7 +4,7 @@
 // Author:  Tad E. Smith
 //
 //
-// Copyright 2003-2013 Tad E. Smith
+// Copyright 2003-2015 Tad E. Smith
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -300,8 +300,7 @@ alloc_ptd ()
 } // namespace internal
 
 
-void initializeFactoryRegistry ();
-void initializeLogLevelStrings ();
+void initializeFactoryRegistry();
 
 
 //! Thread local storage clean up function for POSIX threads.
@@ -373,7 +372,6 @@ initializeLog4cplus()
     dc->TTCCLayout_time_base = helpers::Time::gettimeofday ();
     Logger::getRoot();
     initializeFactoryRegistry();
-    initializeLogLevelStrings();
 
     initialized = true;
 }

@@ -2,8 +2,10 @@
 *.ncb
 *.suo
 *.sdf
+*.opensdf
 .#*
 *~
+*.bak
 ipch/
 autom4te.cache/
 objdir*/
@@ -11,6 +13,25 @@ Win32/
 x64/
 obj/
 stage/
+
+.idea
+
+# LaTeX/PDF produciton byproducts
+*.aux
+*.log
+*.tex
+*.toc
+*.xwm
+*.pdf
+*.ref_rename_step
+
+# Compiler produced temporaries
+*.s
+*.ii
+
+# Patches
+*.patch
+*.diff
 
 #
 # From Github's C++.gitignore:
@@ -37,4 +58,3 @@ stage/
 *.exe
 *.out
 *.app
-/msvc10/log4cplus.opensdf
